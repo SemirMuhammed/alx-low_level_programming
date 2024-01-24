@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * op_add: Addition
+ * op_add - Addition
  * @a: integer
  * @b: integer
  *
@@ -14,7 +14,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub: Substruction
+ * op_sub - Substruction
  * @a: integer
  * @b: integer
  *
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul: Multiplication
+ * op_mul - Multiplication
  * @a: integer
  * @b: integer
  *
@@ -38,7 +38,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div: Division
+ * op_div - Division
  * @a: integer
  * @b: integer
  *
@@ -55,7 +55,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod: Module
+ * op_mod - Module
  * @a: integer
  * @b: integer
  *
