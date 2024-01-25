@@ -36,6 +36,8 @@ void print_all(const char * const format, ...)
 					str = "(nil)";
 				printf("%s", str);
 				break;
+			default:
+				break;
 		}
 		if (i < num - 1 && (format[i] == 'c' || format[i] == 'i' ||
 		format[i] == 'f' || format[i] == 's'))
