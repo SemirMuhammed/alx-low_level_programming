@@ -9,14 +9,16 @@
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, num = 0;
+	unsigned int i, num;
 	char *str;
 	va_list args;
 
+	num = 0;
 	while (format[num] != '\0')
 		num++;
 
 	va_start(args, format);
+	i = 0;
 	while (i < num)
 	{
 		switch (format[i])
