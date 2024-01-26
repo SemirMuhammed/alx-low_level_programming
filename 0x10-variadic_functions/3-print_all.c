@@ -14,12 +14,12 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	num = 0;
-	while (format[num] != '\0')
+	while (format != NULL && format[num] != '\0')
 		num++;
 
 	va_start(args, format);
 	i = 0;
-	while (i < num)
+	while (format != NULL && i < num)
 	{
 		switch (format[i])
 		{
