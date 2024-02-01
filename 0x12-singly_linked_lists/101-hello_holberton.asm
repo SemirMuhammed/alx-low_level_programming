@@ -1,16 +1,15 @@
-section .data
-    format_string db "Hello, Holberton", 10, 0
+SECTION .data
+	string:	db "Hello, Holberton", 0
+	format:	db "%s", 10, 0
 
-section .text
-    global main
-    extern printf
-
+SECTION .text
+	extern printf
+	global main
 main:
-    mov rdi, format_string
-    mov rax, 0
-    call printf
+	mov esi, string
+	mov edi, format
+	mov eax, 0
+	call printf
 
-    mov rax, 60
-    xor rdi, rdi
-    syscall
-
+	mov eax, 0
+	ret
