@@ -1,9 +1,8 @@
 section .data
-    format_string db 'Hello, Holberton', 10, 0
+    format_string db "Hello, Holberton", 10, 0
 
 section .text
     global main
-
     extern printf
 
 main:
