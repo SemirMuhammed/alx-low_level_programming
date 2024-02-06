@@ -14,7 +14,10 @@ size_t free_listint_safe(listint_t **h)
 	size_t size = 0, len = 0;
 
 	if (current == NULL)
+	{
+		*h = NULL;
 		return (0);
+	}
 
 	len = find_listint_size(*h);
 	while (len == 0)

@@ -14,7 +14,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t len = 0, node_count = 0;
 
 	if (head == NULL)
-		return (0);
+		exit(98);
 
 	len = find_listint_len(head);
 
