@@ -6,17 +6,17 @@ size_t find_listint_len(const listint_t *head);
 /**
  * print_listint_safe - prints a linked list
  * @head: head of linked list
- * 
+ *
  * Return: number of node_count in linked list
  */
 size_t print_listint_safe(const listint_t *head)
 {
-    size_t len = 0, node_count = 0;
+	size_t len = 0, node_count = 0;
 
-    if (head == NULL)
-        return (0);
+	if (head == NULL)
+		return (0);
 
-    len = find_listint_len(head);
+	len = find_listint_len(head);
 
 	while (len == 0)
 	{
@@ -38,11 +38,17 @@ size_t print_listint_safe(const listint_t *head)
 	printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 	node_count++;
 
-    return (node_count);
+	return (node_count);
 }
 
+/**
+ * find_listint_len - gets length of linked list
+ * @head: head of linked list
+ *
+ * Return: length of linked list
+ */
 size_t find_listint_len(const listint_t *head)
-{	
+{
 	const listint_t *slow, *fast;
 	size_t node_count = 0;
 
