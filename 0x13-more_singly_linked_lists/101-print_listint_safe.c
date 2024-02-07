@@ -13,13 +13,16 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t len = 0, node_count = 0;
 
+
 	if (head == NULL)
-		exit(98);
+		return (0);
 
 	len = find_listint_len(head);
 
 	while (len == 0)
 	{
+		if (head == head->next)
+			break;
 		printf("[%p] %d\n", (void *)head, head->n);
 		node_count++;
 		head = head->next;

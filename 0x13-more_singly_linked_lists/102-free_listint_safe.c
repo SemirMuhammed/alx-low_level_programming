@@ -22,6 +22,8 @@ size_t free_listint_safe(listint_t **h)
 	len = find_listint_size(*h);
 	while (len == 0)
 	{
+		if (current == current->next)
+			break;
 		next = current->next;
 		free(current);
 		current = next;
