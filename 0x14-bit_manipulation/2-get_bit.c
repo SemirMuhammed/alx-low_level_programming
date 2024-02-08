@@ -9,23 +9,25 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bit = 1;
+	int bit = 0;
 
 	if (index == 0)
-		return (bit & n);
-
+	{
+		bit |= n;
+		return (bit & 1);
+	}
 	while (n)
 	{
 		n = n >> 1;
 		index--;
-		if (!index)
+		if (index == 0)
 			break;
 	}
 
 	if (index)
 		return (-1);
 
-	bit &= n;
-	return (bit);
+	bit |= n;
+	return (bit & 1);
 }
 
