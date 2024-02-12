@@ -38,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 }
 
 /**
- * _ferror - handles clean and safe return
+ * _freturn - handles clean and safe return
  * @fd: file discriptor
  * @buf: buffer
  * @wc: actual number of letters
