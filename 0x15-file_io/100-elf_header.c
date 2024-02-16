@@ -248,8 +248,6 @@ void close_elf(int elf)
 int main(int argc, char *argv[])
 {
 	Elf64_Ehdr *header;
-	Elf64_Ehdr *hsl;
-	hsl->
 	int elf_file, r;
 
 	(void)argc;
